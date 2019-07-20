@@ -1,0 +1,5 @@
+<h1>タスク一覧画面</h1>
+<% @tasks.each do |task| %>
+  <h2><%= task.name %></h2>
+  <%= task.content %>
+<% end %>
