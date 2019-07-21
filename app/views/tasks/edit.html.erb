@@ -1,17 +1,19 @@
 <h1>タスク編集</h1>
-<%=params[:id] %>
+
 
 <%= form_for @task do |f| %>
 
 <div class="task-input">
-  <%=f.label :name%>
-  <%=f.text_field :name, class:'task__input-name' %>
+    <%=f.label :name%>
+    <%=f.text_field :name, class:'task__input-name' %>
 </div>
+
 <div class="task-input">
- <%= f.label :content %>
- <%= f.text_area :content,class:'task__input-content' %>
+     <%= f.label :content %>
+     <%= f.text_area :content,class:'task__input-content' %>
 </div>
+
 <div class="task-input">
-<%=f.submit %>
+      <%=f.submit %>
 </div>
   <% end %>
